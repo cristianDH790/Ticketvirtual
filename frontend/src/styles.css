@@ -1,0 +1,120 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: radial-gradient(1200px circle at 10% 0%, rgba(109, 94, 252, 0.14), transparent 45%),
+    radial-gradient(900px circle at 90% 10%, rgba(45, 42, 143, 0.12), transparent 40%),
+    #f7f7fb;
+  color: #12123b;
+}
+
+:root {
+  --tq-primary: #2d2a8f;
+  --tq-accent: #6d5efc;
+  --tq-bg: #f7f7fb;
+  --tq-text: #12123b;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1;
+}
+
+/* Material polish */
+.mat-mdc-card {
+  border-radius: 16px !important;
+}
+
+.page-card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(45, 42, 143, 0.08);
+  box-shadow: 0 18px 50px rgba(18, 18, 59, 0.08) !important;
+}
+
+.card-pad {
+  padding: 16px;
+}
+
+.table-wrap {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(18, 18, 59, 0.08);
+}
+
+.mat-mdc-table {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.mat-mdc-header-row {
+  background: rgba(45, 42, 143, 0.05);
+}
+
+.mat-mdc-row:hover .mat-mdc-cell {
+  background: rgba(109, 94, 252, 0.06);
+}
+
+.mat-mdc-raised-button,
+.mat-mdc-outlined-button,
+.mat-mdc-button {
+  border-radius: 999px !important;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.pill--admin {
+  background: rgba(45, 42, 143, 0.1);
+  color: var(--tq-primary);
+}
+
+.pill--agente {
+  background: rgba(109, 94, 252, 0.14);
+  color: var(--tq-primary);
+}
+
+.pill--nuevo {
+  background: rgba(255, 193, 7, 0.18);
+  color: #7a4b00;
+}
+
+.pill--asignado {
+  background: rgba(33, 150, 243, 0.16);
+  color: #0b4e8a;
+}
+
+.pill--atendido {
+  background: rgba(76, 175, 80, 0.18);
+  color: #1b5e20;
+}
+
+.pill--noatendido {
+  background: rgba(244, 67, 54, 0.14);
+  color: #7a1c14;
+}
